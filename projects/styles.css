@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(jkqdp16z2jmoen2sx9yy1hjiaxmjjm96tvlnymyadqphd2aw6akvks5rsgc3ekjh-.jpg);
+/*  background-image: url("gettyimages-626771258-612x612.jpg")*/
+}
+
+header {
+    margin: 0;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: azure;
+  color: black;
+}
+.topnav a.active {
+  background-color: green;
+  color: white;
+}
+background {
+  background-color: azure;
+}
+h1 {
+  text-align: center;
+}
+.homepage {
+    background-color: aliceblue;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: deepskyblue;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.flex-container > p {
+    background-color: aliceblue;
+    margin: 2em;
+    padding: 1em;
+    font-size: 10px;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: black; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+    background-color: white;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1369px) {
+  .modal-content {
+    background-color: white;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+/* The Close Button */
+.close {
+    color: darkgray;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+button.button {
+  background:none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-bottom:#02274a 1px solid;
+  font-size:20px;
+}
+button.button:hover {
+  border-bottom:#a99567 1px solid;
+  color: red;
+}

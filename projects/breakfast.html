@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emily's Kitchen : Breakfast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <h1>Emily's Kitchen : Breakfast</h1>
+
+<div class="topnav">
+  <a href="homepage.html">Home</a>
+  <a class="active" href="breakfast.html">Breakfast</a>
+  <a href="dinner.html">Dinners</a>
+  <a href="dessert.html">Desserts</a>
+</div>
+
+<div class="flex-container">
+<p>
+    <button class="button" data-modal="modalOne">
+        Tortilla Espanola
+    </button>
+</p>
+</div>   
+<div id="modalOne" class="modal">
+    <div class="modal-content">
+        <div class="recipe-form">
+            <a class="close">&times;</a>
+              <h1>Tortilla Espa?ola</h1>
+    
+    <h3>Ingredients/Ingredientes</h3>
+    
+    <div>
+        <li>3 papas grandes</li>
+        <li>1 cebolla</li>
+        <li>Aceite</li>
+        <li>Sal</li>
+        <li>5 huevos</li>
+        <li>Harina</li>
+    </div>
+    <p>Pelar las papas y cortalas en rodajas super delgadas. Haz lo mismo con la cebolla.</p>
+    <p>En un sarten ponemos una abundante cantidad de aceite y ponemos las papas a que se cosa por un rato. Después añadimos la cebolla para cocer.</p>
+    <p>Batimos los huevos con sal y un poco de harina.</p>
+    <p>Escurre bien la papa del aceite y mezcla con el huevo.</p>
+    <p>Ponemos un poco del aceite que nos sobro a un sarten mas pequeño. Y lo ponemos a cocer. Con mucho cuidad se voltea para que se quede pegado.</p>
+        </div>
+    </div>
+</div>
+
+<script>    
+var modalBtns = [...document.querySelectorAll(".button")];
+modalBtns.forEach(function(btn){
+    btn.onclick = function() {
+        var modal = btn.getAttribute('data-modal');
+        
+        document.getElementById(modal).style.display = "block";
+    }
+});
+
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn) {
+    btn.onclick = function() {
+        var modal = btn.closest('.modal');
+        modal.style.display = "none";
+    }
+});
+    
+window.onclick = function(event) {
+    if ( event.target.className === "modal") {
+        event.target.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
